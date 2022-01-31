@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 // import Header from './components/Header';
 import Nav from './components/Nav';
-// import Project from './components/Project';
-// import Footer from './components/Footer';
+import Section from './components/Section';
+import Projects from './components/Projects';
 import About from './components/About';
+import Resume from './components/Resume';
+// import Footer from './components/Footer';
 import ContactForm from './components/Contact';
 
 function App() {
   const [categories] = useState([
-    { name: 'Projects', description: 'Cards showing my projects and work' },
-    { name: 'Resume', description: 'My resume showing skills and experience' }
+    { name: 'About Me', description: 'About Me' },
+    { name: 'Projects', description: 'My Projects' },
+    { name: 'Resume', description: 'My Resume' }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -27,10 +30,12 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
-            <About></About>
+          <h1>Brett Howard</h1>
+          <h3>Full-Stack Web Developer</h3>
+            <Section currentCategory={currentCategory}/>
           </>
         ) : (
-          <ContactForm></ContactForm>
+          <ContactForm/>
         )}
       </main>
     </div>
