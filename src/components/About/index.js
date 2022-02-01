@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import coverPhoto from '../../assets/cover/Portfolio-portrait.jpeg';
+import coverPhoto from '../../assets/cover/Cover-photo.jpg';
 
-const About = ({ category }) => {
+const About = () => {
 
   
 
 
   return (
     <section className="my-5">
-      <h1 id="about">Brett Howard</h1>
-      <h3 id='about-sub'>Full-Stack Web Developer</h3>
-      <img src={coverPhoto} className='my-2' style={{ width: '50%' }} alt='cover' />
+      <img src={coverPhoto} className='my-2 cover-photo' style={{ width: '50%' }} alt='cover' />
       <div className="my-2">
         <p>
           Hey! My name is Brett Howard, and I am a Full-Stack Web Developer. I graduated from the University of Utah Coding Bootcamp

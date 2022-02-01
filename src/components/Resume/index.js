@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
-import coverPhoto from '../../assets/cover/Portfolio-portrait.jpeg';
 
-const About = ({ category }) => {
-
-  
-
-
+const Resume = () => {
   return (
     <section className="my-5">
       <h1 id="about">Brett Howard</h1>
@@ -13,11 +8,14 @@ const About = ({ category }) => {
       
       <div className="my-2">
         <p>
-          fdbvsdbfghbfdgsdfvgdfbgasdfgadfvsfvsd
+          Test area for Resume: Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing
+          Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur
+          Lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet, consectetur
+          Lorem ipsum dolor sit amet, consectetur, Lorem ipsum dolor sit amet, consectetur
         </p>
       </div>
     </section>
   );
 }
 
-export default About;
+export default Resume;
