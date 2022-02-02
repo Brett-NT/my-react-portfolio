@@ -8,6 +8,7 @@ main {
   --secondary: #f34747;
   --tertiary: #B12704;
   --light: #faedc4;
+  --form: #505050;
   --dark: #272727;
   --darker: #000000;
   --error: rgb(228, 46, 1);
@@ -130,7 +131,11 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+  background-color: var(--form);
+  margin-bottom: 50px;
 }
 
 input {
@@ -315,6 +320,14 @@ a {
   text-align: center;
   background-color: var(--primary);
   color: var(--light);
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 30px;
+}
+
+.form-el {
+  display: block;
+  flex-wrap: wrap;
+}
+
+label {
+  display: block;
 }
